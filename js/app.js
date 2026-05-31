@@ -659,24 +659,25 @@ function renderStartPage(resortId = currentResort || "wdw") {
           <input id="fundLink" class="input" placeholder="https://..." />
         </div>
 
-        <div class="card" style="margin-top:12px; border: 1px solid rgba(17,24,39,0.12);">
-          <div class="h1" style="font-size:16px;">Unverified Twitter User? Consider Twofer mode</div>
+        <div class="card" style="margin-top:12px; border:2px solid var(--park); background:#ffffff;">
+          <div class="h1" style="font-size:16px; color:var(--park);">Unverified Twitter User? Consider Twofer mode</div>
           <p class="p" style="margin-top:6px;">Twofer mode creates one draft tweet for every two rides instead of every ride.</p>
           <div class="radioList" style="margin-top:10px;">
-            <label class="radioItem">
+            <label class="btn btnInverse" style="display:flex; align-items:center; justify-content:flex-start; gap:10px; width:100%; margin-bottom:8px;">
               <input type="radio" name="tweetMode" value="original" checked />
               <span>Original mode: tweet every ride</span>
             </label>
-            <label class="radioItem">
+            <label class="btn btnInverse" style="display:flex; align-items:center; justify-content:flex-start; gap:10px; width:100%;">
               <input type="radio" name="tweetMode" value="twofer" />
               <span>Twofer mode: tweet every 2nd ride</span>
             </label>
           </div>
           <div class="btnRow" style="margin-top:10px;">
-            <button id="twoferInfoBtn" class="btn" type="button">What's This?</button>
+            <button id="twoferInfoBtn" class="btn btnPrimary" type="button">What's This?</button>
           </div>
         </div>
 
+        
         <div class="card" style="margin-top:12px; border: 1px solid rgba(17,24,39,0.12);">
           <div class="h1" style="font-size:16px;">Exclude rides (refurb / custom challenge)</div>
            <p class="p" style="margin-top:6px;"> Click to exclude rides that are not operating today, or to create a custom challenge. </p>
